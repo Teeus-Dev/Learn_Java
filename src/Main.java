@@ -9,13 +9,17 @@ public class Main {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        double raio, area, pi = 3.14159;
+        int a, b, c, d, diferenca;
 
-        raio = sc.nextDouble();
+        a = sc.nextInt();
+        b = sc.nextInt();
+        c = sc.nextInt();
+        d = sc.nextInt();
 
-        area = pi * raio * raio;
+        diferenca  = ((a * b) - (c * d));
 
-        System.out.printf("area=%.4f%n", area);
+
+        System.out.printf("Diferença é iagual ah: " + diferenca);
 
 
         sc.close();

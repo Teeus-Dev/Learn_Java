@@ -9,17 +9,17 @@ public class Main {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        int a, b, c, d, diferenca;
+        int numero, horas;
+        double valorHora, salario;
 
-        a = sc.nextInt();
-        b = sc.nextInt();
-        c = sc.nextInt();
-        d = sc.nextInt();
+        numero = sc.nextInt();
+        horas = sc.nextInt();
+        valorHora = sc.nextDouble();
 
-        diferenca  = ((a * b) - (c * d));
+        salario = valorHora * horas;
 
-
-        System.out.printf("Diferença é iagual ah: " + diferenca);
+        System.out.println(" Numero do funcionario: " + numero);
+        System.out.printf("Salario: R$ %.2f%n", salario);
 
 
         sc.close();

@@ -9,17 +9,19 @@ public class Main {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        int numero, horas;
-        double valorHora, salario;
+        int idPeca, qtd;
+        double valorQTD, valorTotal;
 
-        numero = sc.nextInt();
-        horas = sc.nextInt();
-        valorHora = sc.nextDouble();
+        idPeca = sc.nextInt();
+        qtd = sc.nextInt();
+        valorQTD = sc.nextDouble();
 
-        salario = valorHora * horas;
+        valorTotal = qtd * valorQTD;
 
-        System.out.println(" Numero do funcionario: " + numero);
-        System.out.printf("Salario: R$ %.2f%n", salario);
+        System.out.println(" Código da peça 1: " + idPeca);
+        System.out.println(" Número de peças: " + qtd);
+        System.out.printf(" Valor unitário da peça: R$ %.2f%n", valorQTD);
+        System.out.println(" O valor a pagar é: " + valorTotal);
 
 
         sc.close();

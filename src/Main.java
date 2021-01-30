@@ -9,20 +9,37 @@ public class Main {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        int idPeca, qtd;
-        double valorQTD, valorTotal;
+        int x = sc.nextInt();
+        String dia = "Hoje";
 
-        idPeca = sc.nextInt();
-        qtd = sc.nextInt();
-        valorQTD = sc.nextDouble();
+        switch (x) {
+            case 1:
+                dia = "Domingo";
+                break;
+            case 2:
+                dia = "Segunda";
+                break;
+            case 3:
+                dia = "Terça";
+                break;
+            case 4:
+                dia = "Quarta";
+                break;
+            case 5:
+                dia = "Quinta";
+                break;
+            case 6:
+                dia = "Sexta";
+                break;
+            case 7:
+                dia = "Sabado";
+                break;
+            default:
+                System.out.println("Valor inválido");
+                break;
+        }
 
-        valorTotal = qtd * valorQTD;
-
-        System.out.println(" Código da peça 1: " + idPeca);
-        System.out.println(" Número de peças: " + qtd);
-        System.out.printf(" Valor unitário da peça: R$ %.2f%n", valorQTD);
-        System.out.println(" O valor a pagar é: " + valorTotal);
-
+        System.out.println("Dia da semana = " + dia);
 
         sc.close();
     }

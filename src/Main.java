@@ -9,39 +9,22 @@ public class Main {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        int x = sc.nextInt();
-        String dia = "Hoje";
+        int horas ;
 
-        switch (x) {
-            case 1:
-                dia = "Domingo";
-                break;
-            case 2:
-                dia = "Segunda";
-                break;
-            case 3:
-                dia = "Terça";
-                break;
-            case 4:
-                dia = "Quarta";
-                break;
-            case 5:
-                dia = "Quinta";
-                break;
-            case 6:
-                dia = "Sexta";
-                break;
-            case 7:
-                dia = "Sabado";
-                break;
-            default:
-                System.out.println("Valor inválido");
-                break;
+
+        horas = sc.nextInt();
+
+        if ( horas > 0 && horas < 12 ) {
+            System.out.println("Bom dia!!");
+        }
+        else if ( horas > 12 && horas < 18 ) {
+            System.out.println("Boa tarde!!");
+        }
+        else {
+            System.out.println("Boa noite!!");
         }
 
-        System.out.println("Dia da semana = " + dia);
 
         sc.close();
     }
-
 }
